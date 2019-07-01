@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Skynet.iml" filepath="$PROJECT_DIR$/Skynet.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skynet.iml" filepath="$PROJECT_DIR$/skynet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/skynet-service-lib-0.9.00-release/skynet-service-lib-0.9.00-release.iml" filepath="$PROJECT_DIR$/skynet-service-lib-0.9.00-release/skynet-service-lib-0.9.00-release.iml" />
     </modules>
   </component>
 </project>

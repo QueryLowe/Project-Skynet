@@ -7,23 +7,258 @@
     tools:context=".WorkoutScreenActivity">
 
     <TextView
-        android:id="@+id/text_workoutscreen"
-        android:layout_width="221dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="272dp"
-        android:layout_marginTop="204dp"
-        android:text="placeholder for workout screen"
+        android:id="@+id/Incline_TxTView"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Incline: "
+        android:textColor="#09449E"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Speed_TxTView"
+        app:layout_constraintTop_toBottomOf="@+id/Speed_TxTView"
+        tools:text="Incline: " />
+
+    <TextView
+        android:id="@+id/Speed_TxTView"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Speed: "
+        android:textColor="#09449E"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Heart_Rate_TxTView"
+        app:layout_constraintTop_toBottomOf="@+id/Heart_Rate_TxTView"
+        tools:text="Speed: " />
+
+    <TextView
+        android:id="@+id/Time_TxTView"
+        android:layout_width="107dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="124dp"
+        android:text="Time Elapsed: "
+        android:textColor="#09449E"
+        android:textSize="16sp"
+
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Time Elapsed: " />
+
+    <TextView
+        android:id="@+id/current_workout_txtview"
+        android:layout_width="392dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center|center_horizontal"
+        android:text="     "
+        android:textColor="#09449E"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="    " />
+
+    <TextView
+        android:id="@+id/incline_val"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="52dp"
+        android:text="waiting for treadmill response"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Incline_TxTView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="@+id/Incline_TxTView" />
+
+    <TextView
+        android:id="@+id/speed_val"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="waiting for treadmill response"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Speed_TxTView"
+        app:layout_constraintStart_toStartOf="@+id/heart_rate_val"
+        app:layout_constraintTop_toBottomOf="@+id/heart_rate_val"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Distance_val"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:text="waiting for treadmill response"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Distance_TxTView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/Distance_TxTView"
+        app:layout_constraintTop_toBottomOf="@+id/Time_val"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/workoutscreen_proceed"
+        style="@android:style/Widget.Button"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#3F51B5"
+        android:elegantTextHeight="true"
+        android:gravity="center_horizontal"
+        android:text="Explore more Workouts"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Incline_TxTView"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/Time_val"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="waiting for treadmill response"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Time_TxTView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/Time_TxTView" />
+
+    <TextView
+        android:id="@+id/heart_rate_val"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:text="waiting for treadmill response"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Heart_Rate_TxTView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/Heart_Rate_TxTView"
+        app:layout_constraintTop_toBottomOf="@+id/Calories_val"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Calories_val"
+        android:layout_width="216dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:text="waiting for treadmill response"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Calories_TxTView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/Calories_TxTView"
+        app:layout_constraintTop_toBottomOf="@+id/Distance_val"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Distance_TxTView"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Distance: "
+        android:textColor="#09449E"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Time_TxTView"
+        app:layout_constraintTop_toBottomOf="@+id/Time_TxTView"
+        tools:text="Distance: " />
+
+    <TextView
+        android:id="@+id/Heart_Rate_TxTView"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Heart Rate: "
+        android:textColor="#09449E"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Calories_TxTView"
+        app:layout_constraintTop_toBottomOf="@+id/Calories_TxTView"
+        tools:text="Heart Rate: " />
+
+    <TextView
+        android:id="@+id/Calories_TxTView"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Calories: "
+        android:textColor="#09449E"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Distance_TxTView"
+        app:layout_constraintTop_toBottomOf="@+id/Distance_TxTView"
+        tools:text="Calories: " />
+
+    <TextView
+        android:id="@+id/workout_state"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="312dp"
-        android:text="Proceed to Explore"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="dummy workout state"
+        app:layout_constraintBottom_toTopOf="@+id/workoutscreen_proceed"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_workoutscreen" />
+        app:layout_constraintTop_toBottomOf="@+id/incline_val"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <TextView
+        android:id="@+id/otf_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="dummy otf state"
+        app:layout_constraintBottom_toTopOf="@+id/workoutscreen_proceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incline_val"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <Button
+        android:id="@+id/workout_screen_cancel"
+        style="@android:style/Widget.Button"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E91E1E"
+        android:gravity="center_horizontal"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/workoutscreen_proceed"
+        app:layout_constraintTop_toBottomOf="@+id/workoutscreen_proceed" />
 </android.support.constraint.ConstraintLayout>

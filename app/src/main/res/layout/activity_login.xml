@@ -1,65 +1,102 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:gravity="center_horizontal"
-    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#072BCEC0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin" tools:context=".LoginActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity">
 
     <!-- Login progress -->
-    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp" android:visibility="gone" />
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="46dp"
         android:text="Skynet"
-        tools:text="Skynet"
-        android:textColor = "#ff7aff24"
-        android:textSize = "35dp"/>
+        android:textColor="#3F51B5"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:text="Skynet" />
 
-    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText android:id="@+id/txtUserName" android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:hint="@string/prompt_username"
-                    android:inputType="textEmailAddress" android:maxLines="1"
+                <EditText
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_username"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
                     android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <EditText android:id="@+id/txtPassword" android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:hint="@string/prompt_password"
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
                     android:imeActionLabel="@string/action_sign_in_short"
-                    android:imeOptions="actionUnspecified" android:inputType="textPassword"
-                    android:maxLines="1" android:singleLine="true" />
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
-            <Button android:id="@+id/btnLogin" style="?android:textAppearanceSmall"
-                android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:layout_marginTop="16dp" android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#10D617"
+                android:backgroundTintMode="src_over"
+                android:shadowColor="#00FFFFFF"
+                android:text="@string/action_sign_in"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btnCancel"
-                style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="181dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
+                android:backgroundTint="#FF0000"
+                android:shadowColor="#F3FFFFFF"
                 android:text="Cancel"
-                android:textStyle="bold" />
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </ScrollView>

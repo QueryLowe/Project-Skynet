@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:skynet-service-lib-0.9.00-release:unspecified@jar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36fca8e0fae6545d386daa3598fbd84d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36fca8e0fae6545d386daa3598fbd84d/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout>
+<version>2.0</version>
+<create-date>2019-04-02T15:03:32-05:00</create-date>
+<modify-date>2019-04-02T15:03:32-05:00</modify-date>
+<device-info>
+<device-type>14</device-type>
+</device-info><user-profile>
+<user-id>2055510</user-id>
+<gender>0</gender>
+<age>0</age>
+<weight units="0">75</weight>
+<units>0</units>
+</user-profile>
+<workout-preset>
+<program-type>4</program-type> <!-- Program type : manual Distance goal-->
+<goal-type>2</goal-type> <!-- GOAL_DISTANCE = 2;-->
+<goal-value>0.1</goal-value> <!--distance value-->
+<goal-unit>0</goal-unit>
+<incline>0.0</incline>  <!-- incline value-->
+<speed units="0">2</speed> <!-- initial speed-->
+</workout-preset>
+</workout>

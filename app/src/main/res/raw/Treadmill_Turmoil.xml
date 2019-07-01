@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<workout>
+<version>2.0</version>
+<create-date>2019-04-02T15:11:20-05:00</create-date>
+<modify-date>2019-04-02T15:11:20-05:00</modify-date>
+<device-info>
+<device-type>14</device-type>
+</device-info>
+<user-profile>
+<user-id>2055510</user-id>
+<gender>0</gender>
+<age>0</age>
+<weight units="0">75</weight>
+<units>0</units>
+</user-profile>
+<workout-preset>
+<program-type>4</program-type> <!-- Program type : manual Calories goal-->
+<goal-type>3</goal-type> <!-- GOAL_CALORIES = 3; -->
+<goal-value>300</goal-value> <!--goal value in calories-->
+<goal-unit>0</goal-unit>
+<incline>0.0</incline> <!-- incline value-->
+<speed units="0">1</speed> <!-- initial speed-->
+</workout-preset>
+</workout>

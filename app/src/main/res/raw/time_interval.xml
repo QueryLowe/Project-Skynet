@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<workout>
+<version>2.0</version>
+<create-date>2019-04-01T11:54:43-05:00</create-date> 
+<modify-date>2019-04-01T11:54:43-05:00</modify-date> 
+<device-info>
+<device-type>14</device-type> 
+</device-info>
+<user-profile>
+<user-id>2055510</user-id>
+<gender>0</gender><age>0</age>
+<weight units="0">75</weight>
+<units>0</units>
+</user-profile>
+<workout-preset>
+<program-type>57</program-type> <!-- Program type : create your own-->
+<goal-type>1</goal-type> <!-- GOAL_TIME = 1; -->
+<cyo-is-metric>0</cyo-is-metric>
+<speed units="0">1</speed>
+<cyo-segment-type>1</cyo-segment-type>
+<cyo-segment-data1>30.0, 20.0, 10.0, 0.0</cyo-segment-data1> <!-- segment data one for speed values multiply with 10.0-->
+<goal-value>10</goal-value> <!-- time goal value defines time (seconds)-->
+<cyo-time>0</cyo-time>  <!-- time goal value defines time (minutes)-->
+<cyo-segment-time>3,4,3</cyo-segment-time> <!-- interval wise time (seconds)-->
+<cyo-segment-data2>0.0,0.0,0.0</cyo-segment-data2><!-- interval wise incline (seconds)-->
+</workout-preset>
+</workout>
+
+

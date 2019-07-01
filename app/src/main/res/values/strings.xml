@@ -41,4 +41,18 @@
     <string name="start" />
     <string name="explore" />
     <string name="cancel" />
+    <string name="invalid_data_value">---</string>
+    <string name="distance_format_miles">%s mi.</string>
+    <string name="distance_format_km">%s km</string>
+    <string name="distance_format_ft">%s ft</string>
+    <string name="distance_format_meters">%s m</string>
+    <string name="speed_format_mph">%s mph</string>
+    <string name="speed_format_kph">%s kph</string>
+    <string name="otf_service_status_connected">Connected</string>
+    <string name="otf_service_status_connecting">Connecting</string>
+    <string name="otf_service_status_disconnected">Not Connected</string>
+    <string name="otf_service_status_error">Error %s</string>
+    <string name="dummy_otf_state">dummy otf state</string>
+    <string name="start_fitness_test">Start Fitness Test</string>
+    <string name="developer_s_magic_button">Developer\'s Magic Button!</string>
 </resources>

@@ -7,27 +7,35 @@
 
     <ListView
         android:id="@+id/session_workout_list_view"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-    </ListView>
+        android:layout_width="match_parent"
+        android:layout_height="382dp"></ListView>
 
     <Button
         android:id="@+id/session_workout_start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Start" />
+        android:layout_width="187dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#30FF00"
+        android:text="Start"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/session_workout_explore"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Explore" />
+        android:layout_width="187dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#2196F3"
+        android:text="Explore"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/session_workout_cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cancel" />
+        android:layout_width="187dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#E00A0A"
+        android:text="Cancel"
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>
