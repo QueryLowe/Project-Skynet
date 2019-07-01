@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('skynet-service-lib-0.9.00-release.aar'))
